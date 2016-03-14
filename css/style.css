@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+}
+
+.masthead {
+    padding-top: 4em;
+    padding-bottom: 5em;
+    background-image: url(http://i.imgur.com/4txebCY.jpg);
+    background-repeat: no repeat;
+    background-size: cover;
+    width: 110%;
+}
+
+#imdb-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#movieSearch,
+#enter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#movieSearch {
+    height: 2em;
+    width: 20em;
+}
+
+#enter {
+    height: 5em;
+    width: 6em;
+    font-weight: bold;
+}
+
+h1,
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-family: fantasy;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: monospace;
+}
+
+#search-results {
+    background-color: white;
+}
