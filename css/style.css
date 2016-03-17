@@ -1,56 +1,125 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* General Styles */
+
 body {
-    background-color: black;
+    background-color: aliceblue;
+    text-align: center;
 }
 
 .masthead {
-    padding-top: 4em;
-    padding-bottom: 5em;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
     background-image: url(http://i.imgur.com/4txebCY.jpg);
     background-repeat: no repeat;
     background-size: cover;
     width: 110%;
 }
 
-#imdb-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#search-box {
+    display: inline-block;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    text-align-last: center;
 }
 
-#movieSearch,
-#enter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+#search-box {
+    width: 25%;
+    padding: 0.5rem;
+    margin: 2rem;
+    color: #000;
 }
 
-#movieSearch {
-    height: 2em;
-    width: 20em;
+#search-button {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-left: 0.1rem;
+    color: #fff;
+    background: #193366;
+    font-size: 1.1rem;
 }
 
-#enter {
-    height: 5em;
-    width: 6em;
-    font-weight: bold;
+#search-box,
+#search-button {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 h1,
 h2 {
-    color: white;
+    color: black;
     text-align: center;
 }
 
 h1 {
     font-family: fantasy;
-    font-weight: 500;
+    font-size: 2rem;
+    padding: 1rem;
+    word-spacing: 0.4rem;
 }
 
 h2 {
     font-family: monospace;
+    font-size: 1.4rem;
 }
 
-#search-results {
-    background-color: white;
+ul,
+ol {
+    list-style-type: none;
+}
+
+.results {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.results li {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+}
+
+.movie-name {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+    font-family: serif;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 40%;
+    background-color: mediumpurple;
+}
+
+ul li {
+    padding: 2rem;
 }

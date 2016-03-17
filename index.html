@@ -3,58 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Tastekid/iMDB API</title>
+    <title>Tastekid Recommendations</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <header class="masthead"></header>
 
-    <div class="main-container">
+    <div class="movie-container">
         <form class="search-movie">
-            <img src="images/imdb_pic.png" id="imdb-logo" height="250" width="400">
-            <br>
-            <h1>Tastekid + iMDB Recommendation Engine</h1>
+            <h1>Tastekid Recommendation Engine</h1>
             <br>
             <h2>Search a movie to get some recommendations:</h2>
-            <input type="text" id="movieSearch" value="Cars">
-            <br>
-            <input type="submit" id="enter" value="Search">
+            <span id="search-span">
+                <input type="text" id="search-box">
+                <button id="search-button">Search</button>
+            </span>
         </form>
     </div>
 
-    <div class="results-container">
-        <div class="search-results"></div>
-        <div class="results"></div>
-    </div>
+    <section class="results">
+        <ul>
 
-    <div class="templates-hidden">
-        <dl class="result movie">
-            <dt>Movie</dt>
-            <dd class="movie-text">
-                <a target="_blank" href=""></a>
-            </dd>
-        </dl>
-        <dl class="result omdb">
-            <dt>imdb Rating</dt>
-            <dd class="imdb-rating">
-                <a target="_blank" href=""></a>
-            </dd>
-            <dt>RT Rating</dt>
-            <dd class="rt-rating">
-                <a target="_blank" href=""></a>
-            </dd>
-        </dl>
-
-        <div class="error">
-            <p>Uh-oh! Something went wrong with your request.</p>
-        </div>
-    </div>
-
-
-
-
-
+        </ul>
+    </section>
 
 
 
